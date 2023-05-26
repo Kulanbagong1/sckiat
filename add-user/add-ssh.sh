@@ -135,3 +135,5 @@ echo -e "      Account UDP      "
 echo -e "$domain:54-65535@$Login:$Pass"
 echo -e "\e[$line═══════════════════════════════════════════════════════\e[m"
 echo ""
+read -n 1 -s -r -p "Press [ Enter ] to back menu menu"
+menu
