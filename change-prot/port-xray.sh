@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="PelangiSenja"
+GitUser="Kulanbagong1"
 
 # // IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -10,7 +10,7 @@ export NC='\033[0m';
 VALIDITY () {
     clear
     today=`date -d "0 days" +"%Y-%m-%d"`
-    Exp1=$(curl -sS https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | grep $MYIP | awk '{print $4}')
+    Exp1=$(curl -sS https://raw.githubusercontent.com/${GitUser}/izinn/main/ip | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
     echo -e "\e[32mYOUR SCRIPT ACTIVE..\e[0m"
     else
@@ -19,7 +19,7 @@ VALIDITY () {
     exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/${GitUser}/izinn/main/ip | awk '{print $5}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 VALIDITY
@@ -32,13 +32,13 @@ fi
 tls="$(cat ~/log-install.txt | grep -w "Vmess Ws Tls" | cut -d: -f2|sed 's/ //g')"
 none="$(cat ~/log-install.txt | grep -w "Vmess Ws None Tls" | cut -d: -f2|sed 's/ //g')"
 clear
-echo -e "\e[0;34m.-----------------------------------------.\e[0m"
+echo -e "\e[0;34m────────────────────────────────────────────\e[0m"
 echo -e "\e[0;34m|             \e[1;33mCHANGE PORT XRAY\e[m            \e[0;34m|\e[0m"
-echo -e "\e[0;34m'-----------------------------------------'\e[0m"
+echo -e "\e[0;34m────────────────────────────────────────────\e[0m"
 echo -e " \e[1;31m>>\e[0m\e[0;32mChange Port For Xray :\e[0m"
 echo -e "  [1]  Change Port Xray Core Tls      [ ${RED}$tls${NC} ]"
 echo -e "  [2]  Change Port Xray Core None TLS [ ${RED}$none${NC} ]"
-echo -e " ============================================="
+echo -e "────────────────────────────────────────────"
 echo -e "  [x]  Back To Menu Change Port"
 echo -e "  [y]  Go To Main Menu"
 echo -e ""
