@@ -14,7 +14,7 @@ wget -O backup "https://raw.githubusercontent.com/${GitUser}/sckiat/main/system/
 wget -O bckp "https://raw.githubusercontent.com/${GitUser}/sckiat/main/system/bckp.sh"
 wget -O restore "https://raw.githubusercontent.com/${GitUser}/sckiat/main/system/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/${GitUser}/sckiat/main/system/strt.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/${GitUser}/XRAY-MULTIPORT/main/limit-speed.sh"
+wget -O limit-speed "https://raw.githubusercontent.com/${GitUser}/sckiat/main/limit-speed.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x bckp
